@@ -1,5 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Coolvetica:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coolvetica&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --color-purple: #18d98b;
+  --color-green: #18bd98;
+}
+
+body {
+  font-family: "Coolvetica", sans-serif;
+}
+
+.text-purple {
+  color: var(--color-purple);
+}
+
+.text-green {
+  color: var(--color-green);
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.5s ease-out forwards;
+}
