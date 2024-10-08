@@ -163,7 +163,7 @@ const Home = () => {
                 onChange={handleChange}
                 className="w-full max-w-[569px] border-2 border-primaryColor outline-none rounded-full py-[12px] px-[31px]"
               />
-              <button className="bg-primaryColor text-white w-[200px] text-center py-[12px] rounded-full border-2 border-primaryColor">
+              <button className="bg-primaryColor text-white w-[200px] text-center py-[12px] rounded-full border-2 border-primaryColor hover:bg-blue-700 hover:text-white">
                 JOIN WAITLIST
               </button>
             </form>
