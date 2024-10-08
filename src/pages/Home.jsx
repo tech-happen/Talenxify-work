@@ -160,6 +160,7 @@ const Home = () => {
                 type="email"
                 required
                 name="email"
+                placeholder="Email address..."
                 onChange={handleChange}
                 className="w-full max-w-[569px] border-2 border-primaryColor outline-none rounded-full py-[12px] px-[31px]"
               />
