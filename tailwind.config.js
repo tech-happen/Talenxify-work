@@ -1,13 +1,15 @@
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        coolvetica: ['Coolvetica', 'sans-serif'],
+        Coolvetica: ["Coolvetica"],
+        Montserrat: ["Montserrat"],
+      },
+      colors: {
+        primaryColor: "#596CFF",
+        secondaryColor: "#00094E",
       },
     },
   },
-  
-}
+};
