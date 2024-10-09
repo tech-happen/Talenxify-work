@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-// const { level } = require("winston");
 const WAITINGLIST = mongoose.Schema(
     {
         email: {

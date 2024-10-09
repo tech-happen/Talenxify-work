@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const env = process.env.NODE_ENV || 'development';
-const logDir = 'hotel-log';
+const logDir = 'log';
 const datePatternConfiguration = {
     default: 'YYYY-MM-DD',
     everHour: 'YYYY-MM-DD-HH',

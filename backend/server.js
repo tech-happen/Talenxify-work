@@ -6,6 +6,7 @@ const corsOption = require("./config/corsOption");
 const { errorHandler } = require("./middleware/errormiddleware");
 const connectDB = require("./config/db");
 const logger = require("./utils/logger");
+const chalk = require("chalk")
 
 const app = express();
 
@@ -39,10 +40,10 @@ app.use((req, res, next) => {
 app.get("/", (req, res) => {
     res.send("welcome to the default route, if you get this message then it means you have probably set it u, doesnt mean you wont further experience challenge");
 });
-app.use("/api/v1/waiting list", require("./Routes/waitinglist"));
+app.use("/api/v1/waitingist", require("./Routes/waitinglist"));
 app.use(errorHandler);
 
 app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+    console.log(chalk.blue.underline(`Server running on port ${port}`));
     logger.info(`Server running on port ${port}`);
 });
