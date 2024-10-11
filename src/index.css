@@ -1,16 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Coolvetica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@layer base {
+  @font-face {
+    font-family: "Coolvetica";
+    src: url("/fonts/coolvetica/coolvetica rg.ttf");
+  }
+}
+
 :root {
   --color-purple: #18d98b;
   --color-green: #18bd98;
-}
-
-body {
-  font-family: "Coolvetica", sans-serif;
 }
 
 .text-purple {
@@ -33,5 +36,5 @@ body {
 }
 
 .animate-slide-in-left {
-  animation: slide-in-left 0.5s ease-out forwards;
+  animation: slide-in-left 2s ease-out forwards;
 }

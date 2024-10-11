@@ -1,21 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Features from "./pages/Features";
-import Contact from "./pages/Contact";
-import NavBar from "./components/NavBar";
+import AppRouter from "./router/AppRouter";
+import "./App.css";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function App() {
+  const helmetContext = {};
   return (
-    <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/features" element={<Features />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
+    <HelmetProvider context={helmetContext}>
+      <AppRouter />
+    </HelmetProvider>
   );
 }
 
