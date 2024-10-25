@@ -41,6 +41,7 @@ app.get("/", (req, res) => {
     res.send("welcome to the default route, if you get this message then it means you have probably set it u, doesnt mean you wont further experience challenge");
 });
 app.use("/api/v1/waitingist", require("./Routes/waitinglist"));
+// app.use("app/v1/authenticate", require("./Routes/user"))
 app.use(errorHandler);
 
 app.listen(port, () => {
